@@ -7,20 +7,26 @@
 
 import Foundation
 
-/// <#Description#>
 final class PhotoPresenter {
-    
+
     weak var photoViewController: PhotoViewControllerOutput?
-    
+
     init(photoViewController: PhotoViewControllerOutput) {
         self.photoViewController = photoViewController
     }
 }
 
-
 extension PhotoPresenter: PhotoInteractorOutput {
-    
-    func presentPhotos(photos: PhotoModels) {
-        photoViewController?.displayPhotos(viewModel: photos)
+    func present(result: Result<PhotoModels, Error>) {
+        let state: ViewState<[PhotoViewModel]>
+
+        switch result {
+        case .success(let photos):
+            state = .loaded(photos)
+        case .failure(let error):
+            state = .failed(message: error.localizedDescription)
+        }
+
+        photoViewController?.display(state: state)
     }
 }

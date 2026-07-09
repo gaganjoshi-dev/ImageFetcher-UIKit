@@ -8,7 +8,7 @@
 import UIKit
 
 protocol AlbumViewControllerOutput: AnyObject {
-    func displayAlbums(viewModel: [AlbumViewModel])
+    func display(state: ViewState<[AlbumViewModel]>)
 }
 
 class AlbumViewController: UIViewController {
@@ -44,14 +44,21 @@ class AlbumViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Albums"
+        fetchAlbums()
+    }
+
+    private func fetchAlbums() {
+        display(state: .loading)
         albumInteractorInput?.fetchAlbums()
     }
 }
 
 extension AlbumViewController: AlbumViewControllerOutput {
 
-    func displayAlbums(viewModel: [AlbumViewModel]) {
-        albumView.data(albums: viewModel)
+    func display(state: ViewState<[AlbumViewModel]>) {
+        albumView.render(state: state) { [weak self] in
+            self?.fetchAlbums()
+        }
         albumView.albumTableViewDataServices?.selectedAlbum = { [weak self] album in
             guard let self else { return }
             self.router?.presentToViewImageController(source: self, data: album)
