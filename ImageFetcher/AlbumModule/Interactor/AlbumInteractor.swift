@@ -8,38 +8,42 @@
 import Foundation
 
 protocol AlbumInteractorInput {
-    
-    /// <#Description#>
     func fetchAlbums()
 }
 
-protocol AlbumInteractorOutput {
-    
-    /// <#Description#>
-    /// - Parameter albums: <#albums description#>
-    func presentAlbums(albums: AlbumModels)
+protocol AlbumInteractorOutput: AnyObject {
+    func present(result: Result<AlbumModels, Error>)
 }
 
 final class AlbumInteractor {
-    
+
     let interactorOutput: AlbumInteractorOutput
-    
+
     init(presenter: AlbumInteractorOutput) {
         interactorOutput = presenter
     }
 }
 
 extension AlbumInteractor: AlbumInteractorInput {
-   
+
     func fetchAlbums() {
-        let defaultSession = URLSession(configuration: .default)
-        defaultSession.codableTask(with: URL(string: "https://jsonplaceholder.typicode.com/albums")!) { (albums: [AlbumModel]?, response, error) in
-            if let albumsList = albums {
-                self.interactorOutput.presentAlbums(albums: albumsList)
-            } else {
-                self.interactorOutput.presentAlbums(albums: [])
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/albums") else {
+            interactorOutput.present(result: .failure(DataLoadingError.decodingFailed))
+            return
+        }
+
+        URLSession.shared.codableTask(with: url) { [interactorOutput] (albums: [AlbumModel]?, _, error) in
+            if let error {
+                interactorOutput.present(result: .failure(error))
+                return
             }
+
+            guard let albums else {
+                interactorOutput.present(result: .failure(DataLoadingError.decodingFailed))
+                return
+            }
+
+            interactorOutput.present(result: .success(albums))
         }.resume()
     }
-    
 }

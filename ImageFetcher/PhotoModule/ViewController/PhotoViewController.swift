@@ -8,7 +8,7 @@
 import UIKit
 
 protocol PhotoViewControllerOutput: AnyObject {
-    func displayPhotos(viewModel: [PhotoViewModel])
+    func display(state: ViewState<[PhotoViewModel]>)
 }
 
 class PhotoViewController: UIViewController {
@@ -43,14 +43,21 @@ class PhotoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        photoInteractorInput?.fetchPhotos(album: router?.dataStore)
         title = router?.dataStore?.albumTitle
+        fetchPhotos()
+    }
+
+    private func fetchPhotos() {
+        display(state: .loading)
+        photoInteractorInput?.fetchPhotos(album: router?.dataStore)
     }
 }
 
 extension PhotoViewController: PhotoViewControllerOutput {
-    func displayPhotos(viewModel: [PhotoViewModel]) {
-        photoView.data(photos: viewModel)
+    func display(state: ViewState<[PhotoViewModel]>) {
+        photoView.render(state: state) { [weak self] in
+            self?.fetchPhotos()
+        }
         photoView.photoCollectionViewDataServices?.selectedPhoto = { [weak self] photo in
             guard let self else { return }
             self.router?.presentToViewImageController(source: self, data: photo)
