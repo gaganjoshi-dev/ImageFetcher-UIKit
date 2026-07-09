@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE00F92526495917003F3FEC /* AlbumRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F92426495917003F3FEC /* AlbumRouter.swift */; };
+		CE00F92E26495F23003F3FEC /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F92D26495F23003F3FEC /* PhotoView.swift */; };
+		CE00F93226495FEE003F3FEC /* PhotoCollectionViewDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F93126495FEE003F3FEC /* PhotoCollectionViewDataServices.swift */; };
+		CE00F9362649693E003F3FEC /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F9352649693E003F3FEC /* PhotoModel.swift */; };
+		CE00F93B264969FB003F3FEC /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F93A264969FB003F3FEC /* PhotoViewModel.swift */; };
+		CE00F93F26496CF8003F3FEC /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F93E26496CF8003F3FEC /* PhotoCollectionViewCell.swift */; };
+		CE00F94226497104003F3FEC /* PhotoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F94126497104003F3FEC /* PhotoPresenter.swift */; };
+		CE00F94726497195003F3FEC /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F94626497195003F3FEC /* PhotoViewController.swift */; };
+		CE00F94C26497250003F3FEC /* PhotoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F94B26497250003F3FEC /* PhotoInteractor.swift */; };
+		CE00F9512649798B003F3FEC /* PhotoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F9502649798B003F3FEC /* PhotoRouter.swift */; };
+		CE00F96526499285003F3FEC /* FullImagePhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F95B26499285003F3FEC /* FullImagePhotoViewModel.swift */; };
+		CE00F96826499285003F3FEC /* FullImageViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F96026499285003F3FEC /* FullImageViewPresenter.swift */; };
+		CE00F96926499285003F3FEC /* FullImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F96226499285003F3FEC /* FullImageViewViewController.swift */; };
+		CE00F96A26499285003F3FEC /* FullImageViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F96426499285003F3FEC /* FullImageViewRouter.swift */; };
+		CED232FC26490AD30057E8CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED232FB26490AD30057E8CB /* AppDelegate.swift */; };
+		CED232FE26490AD30057E8CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED232FD26490AD30057E8CB /* SceneDelegate.swift */; };
+		CED2330526490AD40057E8CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED2330426490AD40057E8CB /* Assets.xcassets */; };
+		CED2331726490E470057E8CB /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2331626490E470057E8CB /* AlbumTableViewCell.swift */; };
+		CED2331A26490F2B0057E8CB /* AlbumTableViewDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2331926490F2B0057E8CB /* AlbumTableViewDataServices.swift */; };
+		CED2331E264911590057E8CB /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2331D264911590057E8CB /* AlbumViewModel.swift */; };
+		CED23323264913170057E8CB /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED23322264913170057E8CB /* AlbumView.swift */; };
+		CED233282649188B0057E8CB /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED233272649188B0057E8CB /* AlbumViewController.swift */; };
+		CED2332F264919370057E8CB /* AlbumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2332E264919370057E8CB /* AlbumPresenter.swift */; };
+		CED23333264921890057E8CB /* AlbumInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED23332264921890057E8CB /* AlbumInteractor.swift */; };
+		CED2333A264926240057E8CB /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED23339264926240057E8CB /* AlbumModel.swift */; };
+		CED23340264927610057E8CB /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2333E264927610057E8CB /* JSONCodable.swift */; };
+		CED23341264927610057E8CB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2333F264927610057E8CB /* NetworkManager.swift */; };
+		CED23342264927610057E8CB /* UIImageView+RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED23343264927610057E8CB /* UIImageView+RemoteImage.swift */; };
+		CED23344264927610057E8CB /* RemotePhotoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED23345264927610057E8CB /* RemotePhotoURL.swift */; };
+		CED23346264927610057E8CB /* RemoteImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED23347264927610057E8CB /* RemoteImageLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE00F92426495917003F3FEC /* AlbumRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRouter.swift; sourceTree = "<group>"; };
+		CE00F92D26495F23003F3FEC /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		CE00F93126495FEE003F3FEC /* PhotoCollectionViewDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewDataServices.swift; sourceTree = "<group>"; };
+		CE00F9352649693E003F3FEC /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		CE00F93A264969FB003F3FEC /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		CE00F93E26496CF8003F3FEC /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE00F94126497104003F3FEC /* PhotoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPresenter.swift; sourceTree = "<group>"; };
+		CE00F94626497195003F3FEC /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		CE00F94B26497250003F3FEC /* PhotoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInteractor.swift; sourceTree = "<group>"; };
+		CE00F9502649798B003F3FEC /* PhotoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRouter.swift; sourceTree = "<group>"; };
+		CE00F95B26499285003F3FEC /* FullImagePhotoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImagePhotoViewModel.swift; sourceTree = "<group>"; };
+		CE00F96026499285003F3FEC /* FullImageViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageViewPresenter.swift; sourceTree = "<group>"; };
+		CE00F96226499285003F3FEC /* FullImageViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageViewViewController.swift; sourceTree = "<group>"; };
+		CE00F96426499285003F3FEC /* FullImageViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageViewRouter.swift; sourceTree = "<group>"; };
+		CED232F826490AD30057E8CB /* ImageFetcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFetcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED232FB26490AD30057E8CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CED232FD26490AD30057E8CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CED2330426490AD40057E8CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CED2330926490AD40057E8CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED2331626490E470057E8CB /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		CED2331926490F2B0057E8CB /* AlbumTableViewDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewDataServices.swift; sourceTree = "<group>"; };
+		CED2331D264911590057E8CB /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		CED23322264913170057E8CB /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		CED233272649188B0057E8CB /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		CED2332E264919370057E8CB /* AlbumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPresenter.swift; sourceTree = "<group>"; };
+		CED23332264921890057E8CB /* AlbumInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInteractor.swift; sourceTree = "<group>"; };
+		CED23339264926240057E8CB /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		CED2333E264927610057E8CB /* JSONCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONCodable.swift; sourceTree = "<group>"; };
+		CED2333F264927610057E8CB /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CED23343264927610057E8CB /* UIImageView+RemoteImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+RemoteImage.swift"; sourceTree = "<group>"; };
+		CED23345264927610057E8CB /* RemotePhotoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemotePhotoURL.swift; sourceTree = "<group>"; };
+		CED23347264927610057E8CB /* RemoteImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CED232F526490AD30057E8CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE00F923264958EE003F3FEC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F92426495917003F3FEC /* AlbumRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CE00F92726495C08003F3FEC /* PhotoModule */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F94F26497806003F3FEC /* Router */,
+				CE00F9342649683E003F3FEC /* Model */,
+				CE00F939264969CC003F3FEC /* ViewModel */,
+				CE00F9452649715D003F3FEC /* ViewController */,
+				CE00F92C26495E02003F3FEC /* View */,
+				CE00F9442649710D003F3FEC /* Presenter */,
+				CE00F94A26497211003F3FEC /* Interactor */,
+			);
+			path = PhotoModule;
+			sourceTree = "<group>";
+		};
+		CE00F92C26495E02003F3FEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F92D26495F23003F3FEC /* PhotoView.swift */,
+				CE00F93E26496CF8003F3FEC /* PhotoCollectionViewCell.swift */,
+				CE00F93126495FEE003F3FEC /* PhotoCollectionViewDataServices.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE00F9342649683E003F3FEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F9352649693E003F3FEC /* PhotoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE00F939264969CC003F3FEC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F93A264969FB003F3FEC /* PhotoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE00F9442649710D003F3FEC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F94126497104003F3FEC /* PhotoPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE00F9452649715D003F3FEC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F94626497195003F3FEC /* PhotoViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE00F94A26497211003F3FEC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F94B26497250003F3FEC /* PhotoInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CE00F94F26497806003F3FEC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F9502649798B003F3FEC /* PhotoRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CE00F95926499285003F3FEC /* FullImageModule */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F95A26499285003F3FEC /* ViewModel */,
+				CE00F95E26499285003F3FEC /* Presenter */,
+				CE00F96126499285003F3FEC /* ViewController */,
+				CE00F96326499285003F3FEC /* Router */,
+			);
+			path = FullImageModule;
+			sourceTree = "<group>";
+		};
+		CE00F95A26499285003F3FEC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F95B26499285003F3FEC /* FullImagePhotoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE00F95E26499285003F3FEC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F96026499285003F3FEC /* FullImageViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE00F96126499285003F3FEC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F96226499285003F3FEC /* FullImageViewViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE00F96326499285003F3FEC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F96426499285003F3FEC /* FullImageViewRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CED232EF26490AD30057E8CB = {
+			isa = PBXGroup;
+			children = (
+				CED232FA26490AD30057E8CB /* ImageFetcher */,
+				CED232F926490AD30057E8CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CED232F926490AD30057E8CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CED232F826490AD30057E8CB /* ImageFetcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CED232FA26490AD30057E8CB /* ImageFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				CED232FB26490AD30057E8CB /* AppDelegate.swift */,
+				CED232FD26490AD30057E8CB /* SceneDelegate.swift */,
+				CED2333D2649272A0057E8CB /* Network */,
+				CED2331026490B5E0057E8CB /* AlbumModule */,
+				CE00F92726495C08003F3FEC /* PhotoModule */,
+				CE00F95926499285003F3FEC /* FullImageModule */,
+				CED2330426490AD40057E8CB /* Assets.xcassets */,
+				CED2330926490AD40057E8CB /* Info.plist */,
+			);
+			path = ImageFetcher;
+			sourceTree = "<group>";
+		};
+		CED2331026490B5E0057E8CB /* AlbumModule */ = {
+			isa = PBXGroup;
+			children = (
+				CE00F923264958EE003F3FEC /* Router */,
+				CED23338264926090057E8CB /* Model */,
+				CED2331C264911320057E8CB /* ViewModel */,
+				CED233262649183D0057E8CB /* ViewController */,
+				CED2331126490CA90057E8CB /* View */,
+				CED2332D264919060057E8CB /* Presenter */,
+				CED23335264921920057E8CB /* Interactor */,
+			);
+			path = AlbumModule;
+			sourceTree = "<group>";
+		};
+		CED2331126490CA90057E8CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CED23322264913170057E8CB /* AlbumView.swift */,
+				CED2331626490E470057E8CB /* AlbumTableViewCell.swift */,
+				CED2331926490F2B0057E8CB /* AlbumTableViewDataServices.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CED2331C264911320057E8CB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CED2331D264911590057E8CB /* AlbumViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CED233262649183D0057E8CB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CED233272649188B0057E8CB /* AlbumViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CED2332D264919060057E8CB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CED2332E264919370057E8CB /* AlbumPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CED23335264921920057E8CB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CED23332264921890057E8CB /* AlbumInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CED23338264926090057E8CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CED23339264926240057E8CB /* AlbumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CED2333D2649272A0057E8CB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CED2333E264927610057E8CB /* JSONCodable.swift */,
+				CED2333F264927610057E8CB /* NetworkManager.swift */,
+				CED23343264927610057E8CB /* UIImageView+RemoteImage.swift */,
+				CED23345264927610057E8CB /* RemotePhotoURL.swift */,
+				CED23347264927610057E8CB /* RemoteImageLoader.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CED232F726490AD30057E8CB /* ImageFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED2330C26490AD40057E8CB /* Build configuration list for PBXNativeTarget "ImageFetcher" */;
+			buildPhases = (
+				CED232F426490AD30057E8CB /* Sources */,
+				CED232F526490AD30057E8CB /* Frameworks */,
+				CED232F626490AD30057E8CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageFetcher;
+			productName = ImageFetcher;
+			productReference = CED232F826490AD30057E8CB /* ImageFetcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CED232F026490AD30057E8CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					CED232F726490AD30057E8CB = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = CED232F326490AD30057E8CB /* Build configuration list for PBXProject "ImageFetcher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CED232EF26490AD30057E8CB;
+			productRefGroup = CED232F926490AD30057E8CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CED232F726490AD30057E8CB /* ImageFetcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CED232F626490AD30057E8CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED2330526490AD40057E8CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CED232F426490AD30057E8CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED2331E264911590057E8CB /* AlbumViewModel.swift in Sources */,
+				CE00F93226495FEE003F3FEC /* PhotoCollectionViewDataServices.swift in Sources */,
+				CE00F94226497104003F3FEC /* PhotoPresenter.swift in Sources */,
+				CED2331A26490F2B0057E8CB /* AlbumTableViewDataServices.swift in Sources */,
+				CED23341264927610057E8CB /* NetworkManager.swift in Sources */,
+				CED23323264913170057E8CB /* AlbumView.swift in Sources */,
+				CE00F93F26496CF8003F3FEC /* PhotoCollectionViewCell.swift in Sources */,
+				CED23333264921890057E8CB /* AlbumInteractor.swift in Sources */,
+				CE00F96926499285003F3FEC /* FullImageViewViewController.swift in Sources */,
+				CE00F93B264969FB003F3FEC /* PhotoViewModel.swift in Sources */,
+				CE00F96A26499285003F3FEC /* FullImageViewRouter.swift in Sources */,
+				CE00F94726497195003F3FEC /* PhotoViewController.swift in Sources */,
+				CE00F96526499285003F3FEC /* FullImagePhotoViewModel.swift in Sources */,
+				CE00F9362649693E003F3FEC /* PhotoModel.swift in Sources */,
+				CE00F92526495917003F3FEC /* AlbumRouter.swift in Sources */,
+				CED2332F264919370057E8CB /* AlbumPresenter.swift in Sources */,
+				CE00F9512649798B003F3FEC /* PhotoRouter.swift in Sources */,
+				CE00F96826499285003F3FEC /* FullImageViewPresenter.swift in Sources */,
+				CE00F94C26497250003F3FEC /* PhotoInteractor.swift in Sources */,
+				CED233282649188B0057E8CB /* AlbumViewController.swift in Sources */,
+				CED232FC26490AD30057E8CB /* AppDelegate.swift in Sources */,
+				CE00F92E26495F23003F3FEC /* PhotoView.swift in Sources */,
+				CED23340264927610057E8CB /* JSONCodable.swift in Sources */,
+				CED23342264927610057E8CB /* UIImageView+RemoteImage.swift in Sources */,
+				CED23344264927610057E8CB /* RemotePhotoURL.swift in Sources */,
+				CED23346264927610057E8CB /* RemoteImageLoader.swift in Sources */,
+				CED2333A264926240057E8CB /* AlbumModel.swift in Sources */,
+				CED232FE26490AD30057E8CB /* SceneDelegate.swift in Sources */,
+				CED2331726490E470057E8CB /* AlbumTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CED2330A26490AD40057E8CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CED2330B26490AD40057E8CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CED2330D26490AD40057E8CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MNKTG487S;
+				INFOPLIST_FILE = ImageFetcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imagefetcher.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CED2330E26490AD40057E8CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MNKTG487S;
+				INFOPLIST_FILE = ImageFetcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imagefetcher.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CED232F326490AD30057E8CB /* Build configuration list for PBXProject "ImageFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED2330A26490AD40057E8CB /* Debug */,
+				CED2330B26490AD40057E8CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED2330C26490AD40057E8CB /* Build configuration list for PBXNativeTarget "ImageFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED2330D26490AD40057E8CB /* Debug */,
+				CED2330E26490AD40057E8CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CED232F026490AD30057E8CB /* Project object */;
+}
