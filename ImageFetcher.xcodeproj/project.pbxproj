@@ -22,7 +22,6 @@
 		CE00F96926499285003F3FEC /* FullImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F96226499285003F3FEC /* FullImageViewViewController.swift */; };
 		CE00F96A26499285003F3FEC /* FullImageViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE00F96426499285003F3FEC /* FullImageViewRouter.swift */; };
 		CEAA000126427610057E8CB /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA000326427610057E8CB /* ViewState.swift */; };
-		CEAA000226427610057E8CB /* ViewStateOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA000426427610057E8CB /* ViewStateOverlayView.swift */; };
 		CED232FC26490AD30057E8CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED232FB26490AD30057E8CB /* AppDelegate.swift */; };
 		CED232FE26490AD30057E8CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED232FD26490AD30057E8CB /* SceneDelegate.swift */; };
 		CED2330526490AD40057E8CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED2330426490AD40057E8CB /* Assets.xcassets */; };
@@ -34,7 +33,6 @@
 		CED2332F264919370057E8CB /* AlbumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2332E264919370057E8CB /* AlbumPresenter.swift */; };
 		CED23333264921890057E8CB /* AlbumInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED23332264921890057E8CB /* AlbumInteractor.swift */; };
 		CED2333A264926240057E8CB /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED23339264926240057E8CB /* AlbumModel.swift */; };
-		CED23340264927610057E8CB /* JSONCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2333E264927610057E8CB /* JSONCodable.swift */; };
 		CED23341264927610057E8CB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2333F264927610057E8CB /* NetworkManager.swift */; };
 		CED23342264927610057E8CB /* UIImageView+RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED23343264927610057E8CB /* UIImageView+RemoteImage.swift */; };
 		CED23344264927610057E8CB /* RemotePhotoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED23345264927610057E8CB /* RemotePhotoURL.swift */; };
@@ -57,7 +55,6 @@
 		CE00F96226499285003F3FEC /* FullImageViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageViewViewController.swift; sourceTree = "<group>"; };
 		CE00F96426499285003F3FEC /* FullImageViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageViewRouter.swift; sourceTree = "<group>"; };
 		CEAA000326427610057E8CB /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
-		CEAA000426427610057E8CB /* ViewStateOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStateOverlayView.swift; sourceTree = "<group>"; };
 		CED232F826490AD30057E8CB /* ImageFetcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFetcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED232FB26490AD30057E8CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED232FD26490AD30057E8CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +68,6 @@
 		CED2332E264919370057E8CB /* AlbumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPresenter.swift; sourceTree = "<group>"; };
 		CED23332264921890057E8CB /* AlbumInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInteractor.swift; sourceTree = "<group>"; };
 		CED23339264926240057E8CB /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
-		CED2333E264927610057E8CB /* JSONCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONCodable.swift; sourceTree = "<group>"; };
 		CED2333F264927610057E8CB /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CED23343264927610057E8CB /* UIImageView+RemoteImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+RemoteImage.swift"; sourceTree = "<group>"; };
 		CED23345264927610057E8CB /* RemotePhotoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemotePhotoURL.swift; sourceTree = "<group>"; };
@@ -216,7 +212,6 @@
 			isa = PBXGroup;
 			children = (
 				CEAA000326427610057E8CB /* ViewState.swift */,
-				CEAA000426427610057E8CB /* ViewStateOverlayView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -320,7 +315,6 @@
 		CED2333D2649272A0057E8CB /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				CED2333E264927610057E8CB /* JSONCodable.swift */,
 				CED2333F264927610057E8CB /* NetworkManager.swift */,
 				CED23343264927610057E8CB /* UIImageView+RemoteImage.swift */,
 				CED23345264927610057E8CB /* RemotePhotoURL.swift */,
@@ -420,7 +414,6 @@
 				CED233282649188B0057E8CB /* AlbumViewController.swift in Sources */,
 				CED232FC26490AD30057E8CB /* AppDelegate.swift in Sources */,
 				CE00F92E26495F23003F3FEC /* PhotoView.swift in Sources */,
-				CED23340264927610057E8CB /* JSONCodable.swift in Sources */,
 				CED23342264927610057E8CB /* UIImageView+RemoteImage.swift in Sources */,
 				CED23344264927610057E8CB /* RemotePhotoURL.swift in Sources */,
 				CED23346264927610057E8CB /* RemoteImageLoader.swift in Sources */,
@@ -428,7 +421,6 @@
 				CED232FE26490AD30057E8CB /* SceneDelegate.swift in Sources */,
 				CED2331726490E470057E8CB /* AlbumTableViewCell.swift in Sources */,
 				CEAA000126427610057E8CB /* ViewState.swift in Sources */,
-				CEAA000226427610057E8CB /* ViewStateOverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

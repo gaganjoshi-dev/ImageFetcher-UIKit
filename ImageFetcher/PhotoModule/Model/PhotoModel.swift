@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 // MARK: - Photo
 class PhotoModel: Codable {
     let albumID, id: Int?

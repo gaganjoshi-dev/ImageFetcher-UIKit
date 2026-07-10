@@ -2,8 +2,6 @@
 //  AlbumInteractor.swift
 //  ImageFetcher
 //
-//  Created by Gagan joshi on 10/05/21.
-//
 
 import Foundation
 
@@ -17,33 +15,22 @@ protocol AlbumInteractorOutput: AnyObject {
 
 final class AlbumInteractor {
 
-    let interactorOutput: AlbumInteractorOutput
+    private let output: AlbumInteractorOutput
 
     init(presenter: AlbumInteractorOutput) {
-        interactorOutput = presenter
+        output = presenter
     }
 }
 
 extension AlbumInteractor: AlbumInteractorInput {
-
     func fetchAlbums() {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/albums") else {
-            interactorOutput.present(result: .failure(DataLoadingError.decodingFailed))
+            output.present(result: .failure(NetworkError.invalidURL))
             return
         }
 
-        URLSession.shared.codableTask(with: url) { [interactorOutput] (albums: [AlbumModel]?, _, error) in
-            if let error {
-                interactorOutput.present(result: .failure(error))
-                return
-            }
-
-            guard let albums else {
-                interactorOutput.present(result: .failure(DataLoadingError.decodingFailed))
-                return
-            }
-
-            interactorOutput.present(result: .success(albums))
-        }.resume()
+        NetworkManager.shared.fetch([AlbumModel].self, from: url) { [output] result in
+            output.present(result: result)
+        }
     }
 }
