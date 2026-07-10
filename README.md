@@ -121,11 +121,9 @@ ImageFetcher/
 ├── AppDelegate.swift
 ├── SceneDelegate.swift              Programmatic window + root navigation
 ├── Common/
-│   ├── ViewState.swift              loading | loaded | failed
-│   └── ViewStateOverlayView.swift   Shared spinner / error / retry UI
+│   └── ViewState.swift              loading | loaded | failed
 ├── Network/
-│   ├── NetworkManager.swift         URLSession + Codable helper
-│   ├── JSONCodable.swift
+│   ├── NetworkManager.swift         Shared fetch + errors
 │   ├── RemoteImageLoader.swift      Cache + dedupe + download
 │   ├── RemotePhotoURL.swift         Dead placeholder URL rewrite
 │   └── UIImageView+RemoteImage.swift
